@@ -1,0 +1,88 @@
+/* =========================================================================
+   DESIGN TOKENS — Meridian Cyber
+   Aesthetic direction: "case file / runbook" — the visual language of an
+   incident log or engagement dossier, not a hacker-terminal cliché and
+   not a generic SaaS gradient page. Case numbers, phase strips, and
+   hairline dividers are structural (they encode real sequence/category
+   information), not decoration.
+   ========================================================================= */
+
+:root {
+    /* ---- Color: light mode (default) ---- */
+    --paper: #eef1ec;          /* cool paper background, not cream */
+    --surface: #ffffff;        /* card / panel surface */
+    --surface-raised: #f6f7f4;
+    --ink: #10151c;            /* primary text */
+    --slate: #445063;          /* secondary / muted text */
+    --slate-soft: #6b7688;
+    --line: #d7dbd3;           /* hairline borders/dividers */
+    --line-strong: #b9c0b4;
+
+    --teal: #1f6f78;           /* primary accent — "signal teal" */
+    --teal-deep: #12474d;
+    --teal-soft: #e3eeed;
+
+    --amber: #b9701f;          /* secondary accent — alerts / CTF / flags */
+    --amber-soft: #f5e9d8;
+
+    --danger: #a4302c;
+    --success: #276b45;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    --shadow-sm: 0 1px 2px rgba(16, 21, 28, 0.06);
+    --shadow-md: 0 6px 20px rgba(16, 21, 28, 0.08);
+    --shadow-lg: 0 20px 50px rgba(16, 21, 28, 0.14);
+
+    /* ---- Type ---- */
+    --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+    --font-body: "Inter", "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+    --container-max: 1180px;
+}
+
+/* ---- Color: dark mode ---- */
+[data-theme="dark"] {
+    --paper: #0b0f14;
+    --surface: #121822;
+    --surface-raised: #161d29;
+    --ink: #e9ece6;
+    --slate: #aab3c2;
+    --slate-soft: #7c879a;
+    --line: #232c38;
+    --line-strong: #303c4b;
+
+    --teal: #3fa3ac;
+    --teal-deep: #7fd0d6;
+    --teal-soft: #10262a;
+
+    --amber: #e0983f;
+    --amber-soft: #2c2113;
+
+    --danger: #e0625c;
+    --success: #55b586;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Standard professional theme */
+:root{
+ --paper:#f7f9fc; --surface:#fff; --surface-raised:#f1f5f9; --ink:#0f172a; --slate:#475569; --slate-soft:#64748b; --line:#e2e8f0; --line-strong:#cbd5e1;
+ --teal:#2563eb; --teal-deep:#1d4ed8; --teal-soft:#eff6ff; --amber:#f59e0b; --danger:#dc2626; --success:#16a34a;
+ --shadow-sm:0 1px 2px rgba(15,23,42,.05); --shadow-md:0 8px 30px rgba(15,23,42,.08); --shadow-lg:0 24px 60px rgba(15,23,42,.12);
+}
+[data-theme="dark"]{--paper:#0f172a;--surface:#111827;--surface-raised:#1e293b;--ink:#f8fafc;--slate:#cbd5e1;--slate-soft:#94a3b8;--line:#263244;--line-strong:#334155;--teal:#60a5fa;--teal-deep:#93c5fd;--teal-soft:#172554;--shadow-sm:0 1px 2px rgba(0,0,0,.3);--shadow-md:0 8px 30px rgba(0,0,0,.35);--shadow-lg:0 24px 60px rgba(0,0,0,.45)}

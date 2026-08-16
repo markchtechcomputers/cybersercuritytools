@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {"source":"/index.php","destination":"/"},
+    {"source":"/training.php","destination":"/training.html"},
+    {"source":"/checkout.php","destination":"/checkout.html"},
+    {"source":"/payment-success.php","destination":"/payment-success.html"},
+    {"source":"/my-purchases.php","destination":"/my-purchases.html"},
+    {"source":"/auth/login.php","destination":"/login.html"},
+    {"source":"/auth/register.php","destination":"/register.html"},
+    {"source":"/auth/logout.php","destination":"/logout.html"},
+    {"source":"/course-access.php","destination":"/course-access.html"},
+    {"source":"/download.php","destination":"/api/download"},
+    {"source":"/about.php","destination":"/about.html"},
+    {"source":"/services.php","destination":"/services.html"},
+    {"source":"/ctf.php","destination":"/ctf.html"},
+    {"source":"/faq.php","destination":"/faq.html"},
+    {"source":"/contact.php","destination":"/contact.html"},
+    {"source":"/pages/blog/index.php","destination":"/blog.html"},
+    {"source":"/pages/legal/privacy-policy.php","destination":"/privacy.html"},
+    {"source":"/pages/legal/terms.php","destination":"/terms.html"}
+  ]
+}

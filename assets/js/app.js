@@ -1,0 +1,3 @@
+async function waitForSupabase(){for(let i=0;i<50;i++){const c=await initSupabase();if(c)return c;await new Promise(r=>setTimeout(r,100));}throw new Error('Supabase is not configured. Add Vercel environment variables.');}
+async function requireUser(){const c=await waitForSupabase();const {data:{user}}=await c.auth.getUser();if(!user){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return null}return user}
+async function authHeader(){const c=await waitForSupabase();const {data:{session}}=await c.auth.getSession();return session?.access_token?{Authorization:'Bearer '+session.access_token}:{}}

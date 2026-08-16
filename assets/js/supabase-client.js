@@ -1,0 +1,1 @@
+async function initSupabase(){if(window.supabaseClient)return window.supabaseClient;if(!window.SUPABASE_URL||!window.SUPABASE_ANON_KEY)return null;window.supabaseClient=supabase.createClient(window.SUPABASE_URL,window.SUPABASE_ANON_KEY);return window.supabaseClient;}

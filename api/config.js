@@ -1,0 +1,1 @@
+export default function handler(req,res){res.setHeader('Cache-Control','no-store');res.status(200).json({url:process.env.NEXT_PUBLIC_SUPABASE_URL||'',anonKey:process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY||''});}
